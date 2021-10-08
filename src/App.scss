@@ -1,0 +1,42 @@
+$theme-colors: (
+    "info": rgb(140, 95, 199),
+    "danger": grey,
+    "primary": rgb(236, 99, 140),
+);
+@import "~bootstrap/scss/bootstrap";
+@font-face {
+    font-family: 'HACKED';
+    src: url('../src/assests/fonts/HACKED.eot');
+    src: url('../src/assests/fonts/HACKED.eot?#iefix') format('embedded-opentype'),
+        url('../src/assests/fonts/HACKED.woff2') format('woff2'),
+        url('../src/assests/fonts/HACKED.woff') format('woff'),
+        url('../src/assests/fonts/HACKED.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SkyFall Done';
+    src: url('../src/assests/fonts/SkyFallDone.eot');
+    src: url('../src/assests/fonts/SkyFallDone.eot?#iefix') format('embedded-opentype'),
+        url('../src/assests/fonts/SkyFallDone.woff2') format('woff2'),
+        url('../src/assests/fonts/SkyFallDone.woff') format('woff'),
+        url('../src/assests/fonts/SkyFallDone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STRING AND WIRE';
+    src: url('../src/assests/fonts/STRINGANDWIRE.eot');
+    src: url('../src/assests/fonts/STRINGANDWIRE.eot?#iefix') format('embedded-opentype'),
+        url('../src/assests/fonts/STRINGANDWIRE.woff2') format('woff2'),
+        url('../src/assests/fonts/STRINGANDWIRE.woff') format('woff'),
+        url('../src/assests/fonts/STRINGANDWIRE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

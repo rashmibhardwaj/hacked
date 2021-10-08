@@ -1,0 +1,94 @@
+@import '../../scss/variables.scss';
+
+.footer {
+    background: #151115;
+
+    .fooLogo {
+        svg {
+            margin-left: -18px;
+        }
+    }
+
+    h3 {
+        font-size: 16px;
+        color: $whiteText;
+        font-family: 'SkyFall Done';
+    }
+
+    ul.socialIcon {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        li {
+            color: $whiteText;
+            font-family: 'SkyFall Done';
+            margin-right: 12px;
+
+            svg {
+                height: 20px !important;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            color: $whiteText;
+            font-family: 'SkyFall Done';
+
+
+
+
+            span {
+                font-family: 'SkyFall Done';
+            }
+
+            a {
+                font-family: 'SkyFall Done';
+                font-weight: normal;
+                font-size: 12px;
+                color: $greytext;
+            }
+        }
+    }
+
+    .copyrightLinks {
+        background-color: #100c10;
+
+        ul {
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            display: flex;
+
+            li {
+                display: inline-block;
+                padding: 0px 15px;
+                font-size: 12px;
+
+                a {
+                    color: $whiteText;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .footer {
+        .copyrightLinks {
+            ul {
+                
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .securityaudit img {
+        width: 100%;
+        height: auto;
+    }
+}

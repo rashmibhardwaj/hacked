@@ -1,0 +1,102 @@
+@import '../../scss/variables.scss';
+
+a.mobileMenu {
+    position: absolute;
+    right: 34px;
+    top: 15px;
+}
+
+.bgImage {
+    background-image: url('../../assests/images/bannerhacked.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 6rem 1rem;
+    max-height: 600px;
+    color: $whiteText;
+
+    svg {
+        height: 55px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .title {
+        font-family: 'HACKED', sans-serif;
+        font-weight: normal;
+        font-size: 150px;
+    }
+
+    .subheading {
+        font-family: 'SkyFall Done';
+        font-weight: normal;
+        font-size: 34px;
+    }
+
+
+}
+
+.joinuslink {
+    color: $whiteText;
+    font-family: 'STRING AND WIRE';
+    font-weight: normal;
+    font-size: 28px;
+    text-decoration: none;
+    position: relative;
+    margin-top: 30px;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        transform: matrix(0.99, -0.14, -0.14, 0.99, 0, 0);
+        background: #B91861 0% 0% no-repeat padding-box;
+        width: 100%;
+        height: 5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+        border-radius: 100%;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .title {
+        font-size: 34px !important;
+    }
+
+    .subheading {
+
+        font-size: 10px;
+
+    }
+
+    .securityaudit img {
+        width: 200px  !important;;
+        height: auto  !important;;
+    }
+
+    .labsTabs {
+        .joinuslink {
+            position: relative;
+            right: 0;
+            top: 33px;
+            font-size: 16px;
+        }
+         .leftContentLabs ul {
+            padding: 0px 0 0;
+        }
+        .rightContentLabs ul li {
+            width: 100%  !important;
+            margin-right: 0  !important;
+            height: auto !important;
+        }
+    }
+}

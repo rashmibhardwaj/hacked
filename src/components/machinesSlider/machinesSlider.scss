@@ -1,0 +1,101 @@
+@import '../../scss/variables.scss';
+
+.machineSlider {
+
+    padding-bottom: 7rem !important;
+
+    .itemSlide {
+        display: flex !important;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & img:nth-child(1) {
+            margin-left: 0 !important;
+        }
+
+        & img:nth-last-child(1) {
+            margin-right: 0 !important;
+        }
+
+        img {
+            height: 125px;
+            margin: 0 5px;
+        }
+
+        div {
+            background: url('../../assests/images/image1.png');
+            width: 125px;
+            height: 125px;
+            margin: 0 5px;
+            background-position: center;
+            background-size: contain;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            &:nth-child(1),
+            &:nth-last-child(3) {
+                filter: hue-rotate(45deg);
+            }
+
+            &:nth-child(3),
+            &:nth-last-child(1) {
+                filter: hue-rotate(283deg);
+            }
+
+            h5 {
+                font-family: 'SkyFall Done';
+                font-size: 12px;
+                margin: 10px 0 5px;
+                color: $whiteText;
+            }
+
+            p {
+                margin-bottom: 6px;
+                font-family: 'STRING AND WIRE';
+                color: $whiteText;
+                font-size: 11px;
+            }
+        }
+
+        & div {
+            img {
+                height: 25px !important;
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .title {
+        font-size: 75px;
+        color: #B91861;
+
+    }
+
+    .subTitle {
+        font-family: 'SkyFall Done';
+        font-size: 16px;
+        color: $whiteText;
+
+    }
+
+    .subheading {
+        font-size: 10px;
+        color: $whiteText;
+    }
+    .slick-next {
+        right: 45%;
+        bottom: -52px !important;
+        top: auto;
+    }
+    
+    .slick-prev {
+        left: 45%;
+        bottom: -52px !important;
+        top: auto;
+    }
+}
+

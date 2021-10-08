@@ -1,0 +1,141 @@
+@import '../../scss/variables.scss';
+
+.labsTabs {
+
+    background: #090309;
+
+    .joinuslink {
+        position: absolute;
+        right: 38px;
+        top: 33px;
+    }
+
+    h2,
+    p {
+        color: $whiteText;
+    }
+
+    h2 {
+
+        font-family: 'HACKED', sans-serif;
+        font-size: 68px;
+        line-height: normal;
+        margin-top: -14px;
+
+    }
+
+    p {
+        font-family: 'SkyFall Done';
+
+    }
+
+    .rightContentLabs {
+        padding: 0 44px 40px;
+        background: #001024 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #131523;
+
+        &:before {
+            background: #001024 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #131523;
+            height: 100%;
+            width: 2px;
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &>div {
+            padding: 60px 0;
+        }
+
+        h2+p {
+            width: 454px;
+            max-width: 100%;
+        }
+
+        p {
+            font-family: 'SkyFall Done';
+            font-size: 10px;
+        }
+
+        ul {
+            margin: 0px !important;
+            padding: 0px;
+
+            li {
+                width: 48%;
+                float: left;
+                margin-right: 15px;
+                padding: 39px 45px;
+                color: #ffffff;
+                margin-bottom: 13px;
+                height: 206px;
+                background-color: #0c1c30;
+                overflow: hidden;
+
+                p {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        h5 {
+            color: $primary-color;
+            font-size: 16px;
+            font-family: 'SkyFall Done';
+        }
+
+    }
+
+    ul {
+        margin: 0px !important;
+        padding: 0px;
+        list-style: none;
+
+        li {
+            list-style: none;
+
+            p {
+                color: $whiteText;
+            }
+        }
+    }
+
+    .leftContentLabs {
+        font-family: 'SkyFall Done';
+
+        ul {
+
+            padding: 100px 0 0;
+
+            li {
+                position: relative;
+                font-size: 23px;
+                text-align: right;
+                margin-bottom: 40px;
+                color: #6B7185;
+                cursor: pointer;
+
+                .active {
+                    position: relative;
+                }
+
+                &.active:after {
+                    content: "";
+                    position: absolute;
+                    transform: rotate(90deg);
+                    background: #B91861 0% 0% no-repeat padding-box;
+                    width: 65px;
+                    height: 5px;
+                    left: initial;
+                    right: -54px;
+                    margin: auto;
+                    bottom: 13px;
+                    border-radius: 100%;
+                    z-index: 9;
+                }
+            }
+        }
+
+    }
+}
